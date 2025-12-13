@@ -1,0 +1,73 @@
+:root {
+  --purple: #6366f1;
+  --purple-dark: #4f46e5;
+}
+
+.bg-chat { background: #f8f9ff; }
+
+.full-screen { position: fixed; inset: 0; overflow: hidden; }
+.bg-video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); z-index: -2; }
+.overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: -1; }
+
+.logo { width: 100px; filter: drop-shadow(0 0 20px #6366f1); animation: float 6s infinite; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+/* Messages */
+#messages {
+  display: flex;
+  flex-direction: column;
+  background: #e5ddd5; /* WhatsApp background */
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  margin: 8px 12px;
+  border-radius: 18px;
+  word-wrap: break-word;
+}
+
+.message.sent {
+  background: #d9fdd3; /* Light green for your messages */
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+  margin-left: auto;
+}
+
+.message.received {
+  background: #ffffff; /* White for received */
+  border: 1px solid #eee;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+/* Unread badge - pink */
+.unread-badge {
+  background: #ff2d95;
+  color: white;
+  font-size: 12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message.received .sender-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #6366f1;
+  margin-bottom: 4px;
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+.input-area {
+  background: #f0f0f0;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
