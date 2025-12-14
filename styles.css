@@ -16,7 +16,7 @@
 #messages {
   display: flex;
   flex-direction: column;
-  background: #e5ddd5; /* WhatsApp background */
+  background: #f9d9a6;
 }
 
 .message {
@@ -28,19 +28,35 @@
 }
 
 .message.sent {
-  background: #d9fdd3; /* Light green for your messages */
+  background: #e7d2ff; /* Light green like WhatsApp, or change to purple: #d9d2ff */
   align-self: flex-end;
   border-bottom-right-radius: 4px;
   margin-left: auto;
 }
 
 .message.received {
-  background: #ffffff; /* White for received */
+  background: white;
   border: 1px solid #eee;
   align-self: flex-start;
   border-bottom-left-radius: 4px;
 }
 
+/* Timestamp */
+.timestamp {
+  font-size: 11px;
+  color: #999;
+  margin-top: 4px;
+  text-align: right;
+}
+
+/* Unread in chat list - pink last message + bold name */
+.unread-chat .chat-name {
+  font-weight: bold;
+}
+
+.unread-chat .last-msg {
+  color: #ff2d95; /* Pink */
+}
 /* Unread badge - pink */
 .unread-badge {
   background: #ff2d95;
@@ -61,13 +77,8 @@
   margin-bottom: 4px;
 }
 
-.timestamp {
-  font-size: 0.7rem;
-  opacity: 0.8;
-  margin-top: 4px;
-}
 .input-area {
-  background: #f0f0f0;
+  background: #e8b9b9;
   padding: 10px;
   border-top: 1px solid #ddd;
 }
