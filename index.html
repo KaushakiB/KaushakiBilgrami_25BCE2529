@@ -13,10 +13,10 @@
   <!-- Landing -->
   <div id="landing" class="vh-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
     <div class="text-center text-white">
-      <img src="/static/logo.png" width="120" class="mb-4">
+      <img src="/static/logo.png" width="160" class="mb-4">
       <h1 class="display-3 fw-bold">Varta</h1>
-      <p class="lead mb-5">Real-time • Secure • Beautiful</p>
-      <button onclick="showLogin()" class="btn btn-light btn-lg px-5 shadow-lg">Enter App</button>
+      <p class="lead mb-5">-Connect • Converse • Communicate-</p>
+      <button onclick="showLogin()" class="btn btn-light btn-lg px-5 shadow-lg">Start your Vartaalap</button>
     </div>
   </div>
 
@@ -26,8 +26,8 @@
       <div class="col-md-4">
         <div class="card shadow-lg">
           <div class="card-body p-5 text-center">
-            <img src="/static/logo.png" width="80" class="mb-4">
-            <h2 style="color:#667eea">Welcome Back</h2>
+            <img src="/static/logo.png" width="120" class="mb-4">
+            <h2 style="color:#667eea">* Welcome *</h2>
             <input type="email" id="email" class="form-control form-control-lg my-3" placeholder="Email">
             <input type="password" id="password" class="form-control form-control-lg" placeholder="Password">
             <button onclick="login()" class="btn btn-lg w-100 mt-3" style="background:#667eea;color:white">Login / Sign Up</button>
@@ -111,13 +111,13 @@
       <div class="modal-content">
         <div class="modal-header" style="background:#667eea;color:white">
           <h5>New Chat</h5>
-          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          <button class="btn-close btn-close-white"id="newChatBtn" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <input type="email" id="new-chat-email" class="form-control" placeholder="Friend's email">
         </div>
         <div class="modal-footer">
-          <button onclick="startNewChat()" class="btn" style="background:#667eea;color:white">Start Chat</button>
+          <button onclick="startNewChat()" id="startChatBtn" class="btn" style="background:#667eea;color:white">Start Chat</button>
         </div>
       </div>
     </div>
